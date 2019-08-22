@@ -14,9 +14,9 @@ printHelpMessage <- function(){
             "minCNum, the minimal Cytosine Number in a LCCS, default value is 3 \n",
             "maxSize, the maxmize size of a LCCS, default value is 500bp \n",
             "posFile, the file includes positions of all cytosine, and at lest two column, like \n" ,
-            "chr1 1 ",
-            "chr1 5 ",
-            "...",
+            "chr1 1 \n",
+            "chr1 5 \n",
+            "... \n",
             "#####################################################################################\n",
             "Reference: doi: 10.1093/hmg/ddv172 ",
             "copyright @ Xiaofei Yang, xfyang@xjtu.edu.cn", sep = '')
