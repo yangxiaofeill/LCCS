@@ -39,21 +39,21 @@ printEndMessage <- function(theBedFile){
   )
 }
 
-theCytosinePosFile <- "./test.methy.cov"
+theCytosinePosFile <- ""
 minCNum <- 3
 maxSize <- 500
 
-# if(length(args) == 0){
-#   printHelpMessage()
-# }else if(length(args) == 1){
-#   theCytosinePosFile <- args[1]
-# }else if(length(args) == 3){
-#   minCNum <- as.numeric(args[1])
-#   maxSize <- as.numeric(args[2])
-#   theCytosinePosFile <- args[3]
-# }else{
-#   printHelpMessage()
-# }
+if(length(args) == 0){
+  printHelpMessage()
+}else if(length(args) == 1){
+  theCytosinePosFile <- args[1]
+}else if(length(args) == 3){
+  minCNum <- as.numeric(args[1])
+  maxSize <- as.numeric(args[2])
+  theCytosinePosFile <- args[3]
+}else{
+  printHelpMessage()
+}
 
 LCCS <- function(leftIndex, rightIndex, theData, currLCCS, maxSize, isInLCCS){
   leftPos <- theData$V2[leftIndex]
